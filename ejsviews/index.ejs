@@ -1,0 +1,26 @@
+<!--Head-->
+<%- include('./partials/head') %>
+  <!--nav-->
+  <%- include('./partials/nav') %>
+    <!--main Content-->
+    <h3 class="subtitle">
+      Blog with <strong>Bulma and EJS</strong>!
+    </h3>
+
+    <% if(blogs.length> 0){ %>
+      <% blogs.forEach((blog)=>{ %>
+        <div class="m-2 px-5">
+          <h4 class="is-size-4 has-text-info">
+            <%= blog.title %>
+          </h4>
+          <p>
+            <%= blog.snippet %>
+          </p>
+        </div>
+        <% }); %>
+
+    <% } else { %>
+       <h4 class="is-size-4 has-text-warning">No Blogs Available Here!!!</h4>
+    <% } %>
+  <!--Footer-->
+  <%- include('./partials/footer') %>

@@ -1,0 +1,24 @@
+<!--Head-->
+<%- include('./partials/head') %>
+  <!--nav-->
+  <%- include('./partials/nav') %>
+    <!--main Content-->
+    <h3 class="subtitle">
+      EJS Blog with <strong>Bulma, and EJS Template</strong>!
+    </h3>
+    <div>
+      <form action="" method="GET">
+        <label name="lTitle" for="title">Blog Title:</label> <br>
+        <input name="iTitle" type="text" id="title"><br>
+        <label name="lSnippet" for="snippet">Blog Snippet </label><br>
+        <input name="iSnippet" type="text" id="snippet"><br>
+        <label name="lBody" for="body">Blog Body</label><br>
+        <textarea name="taBody" id="body" cols="30" rows="10">
+
+          </textarea><br>
+        <button>Submit</button>
+
+      </form>
+    </div>
+    <!--Footer-->
+    <%- include('./partials/footer') %>
